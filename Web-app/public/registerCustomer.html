@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Customer Loyalty Program</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="bg-light">
+<div id="header-blue-wave-bar">
+  <nav>
+    <a class="navbar-brand" href="/home">Customer Loyalty Program</a>
+    
+  </nav>
+
+</div>
+
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Customer Registration</h1>
+      <p id="registration-info" style="display:block;">Complete the form below to register customer on the network</p>
+    </div>
+  </div>
+
+ <!-- panel registration-->
+<div class="row">
+<div class="col-md-12">
+
+  <!-- card-->
+  <div class=" container">
+    
+
+
+
+      <div class="row">
+       
+         <div class="col-md-6">
+
+            <label for="account-number"><b>Account Number </b><span class="text-muted"> (identification on the network)</span></label>
+            <div class="input-group account-number">
+              <input type="text" class="form-control" id="account-number" placeholder="" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                ID is required.
+              </div>
+            </div>
+            <small class="text-muted">Minimum six digits</small>
+          </div>
+    
+      </div>
+       
+
+      
+    
+          <div class="row">
+            <div class="col-md-4 first-name">
+              <label for="firstName"><b>First name</b></label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-4 last-name">
+              <label for="lastName"><b>Last name</b></label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          
+            <div class="col-md-4 addressLine">
+              <label for="addressLine"><b>Address Line</b></label>
+              <input type="text" class="form-control" id="addressLine" placeholder="2028 Mallards way" value="" required>
+              <div class="invalid-feedback">
+                Please enter a valid  address.
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="row">
+            <div class="col-md-4 city">
+              <label for="city"><b>City</b></label>
+              <input type="text" class="form-control" id="city" placeholder="Ofallon" value="" required>
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+          
+            <div class="col-md-4 zip">
+              <label for="zip"><b>Zip</b></label>
+              <input type="text" class="form-control" id="zip" placeholder="63368" value="" required>
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+          
+            <div class="col-md-4 state">
+              <label for="state"><b>State</b></label>
+              <input type="text" class="form-control" id="state" placeholder="MO" value="" required>
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+          </div>
+          
+          <div>
+              
+            <!--h4>Usage of Information</h4>
+                <p>The member is identified on the network with their ID.  They </p>
+            </div-->
+    
+            
+           
+          </div>
+          <div class="row">
+            <div class=" col-md-12">
+                <hr class="mb-4"/>
+                <button class="btn btn-primary float-right register-customer" type="submit">Register</button>
+                
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-md-12">
+             
+          </div>
+        </div>
+    
+        </div>
+      
+
+
+
+      
+    </div>
+  
+  <!--card end-->
+</div>
+
+</div>
+
+ <!-- panel registration-->
+
+
+
+
+
+
+
+  
+
+  <div class="container text-center">
+    <div class="loader" id="loader" style="display:none;"></div>
+  </div>
+
+  <div class="container text-center" id="successful-registration" style="display:none;">
+    <h4>successfully registered on the blockchain network</h4>
+    <div class="row" style="display:block;">
+      <br>
+      <div><a class="btn btn-primary" href="/customer" role="button">Customer Sign In &raquo;</a></div>
+      <br>
+      <div><a class="btn btn-primary" href="/home" role="button">Home &raquo;</a></div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+
+
+
+
+</body>
+
+</html>
+
+<script src="/scripts/jquery-3.3.1.min.js"></script>
+
+<script src="/scripts/bootstrap.js"></script>
+
+<script src="/scripts/register.js"></script>

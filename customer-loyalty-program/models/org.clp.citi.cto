@@ -1,0 +1,67 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace org.clp.citi
+
+// Customer order details identified by orderId
+asset Order identified by orderId {
+    o String orderId
+    o String orderName optional
+    --> Partner partner optional
+    --> Customer customer
+    o Integer points
+}
+//Customer identified by accountNumber
+participant Customer identified by accountNumber {
+  o String accountNumber
+  o String firstName
+  o String lastName
+  o String addressLine
+  o String city
+  o String zip
+  o String state
+  o Integer points
+}
+
+//partner identified by id
+participant Partner identified by id {
+  o String id
+  o String name
+  o String transCurrency
+  o String convertionRate
+  o Integer rewardsBalance
+}
+
+
+//Bank identified by BankId
+participant Bank identified by bankId {
+  o String bankId
+  o String bankName
+}
+
+
+//points earned
+transaction EarnPoints {
+    o Integer points
+    --> Partner partner
+    --> Customer member    
+}
+
+//points spent
+transaction UsePoints {
+    o Integer points
+    --> Partner partner  
+    --> Customer member
+}
+

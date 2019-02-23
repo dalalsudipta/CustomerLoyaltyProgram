@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Customer Loyalty Program</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="bg-light">
+
+  <div id="header-blue-wave-bar">
+    <nav>
+      <a class="navbar-brand" href="/home">Customer Loyalty Program</a>
+      
+    </nav>
+  
+  </div>
+
+
+  <div class="jumbotron" id="loginSection" style="display:block;">
+    <div class="container">
+      <h2>Customer Sign In</h2>
+      <br>
+
+
+      <div class="row">
+        <div class="col-md-4 account-number">
+          <label for="accountNumber"><b>Account Number</b></label>
+          <input type="text" class="form-control" id="accountNumber" placeholder="" value="" required/>
+          <div class="invalid-feedback">
+            Valid account number is required.
+          </div>
+          
+
+        </div>
+       
+      </div>
+
+      <div class="row">
+          <div class="col-md-4 ">
+              
+              <button class="btn btn-primary float-right sign-in-member" type="submit">Sign In</button>
+              
+          </div>
+        </div>
+    </div>
+  </div>
+<!--
+      <div class="account-number">
+        <p> Enter Account Number
+          <input>
+        </p>
+      </div>
+      <div class="card-id">
+        <p> Enter Access Card ID
+          <input>
+        </p>
+      </div>
+      <button class="btn btn-primary sign-in-member">SIGN IN</button>
+    </div>
+  </div>
+-->
+
+  <div id="transactionSection" style="display:none;">
+
+
+    <div class="jumbotron" id="headSection" style="display:block;">
+      <div class="container">
+
+        <table>
+          <tr>
+            <td>
+              <div style="padding-right: 20px">
+                <h2>Name:</h2>
+                <h2>Account #:</h2>
+                <h2>Points:</h2>
+              </div>
+            </td>
+            <td>
+              <div class="heading"> </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    
+    <!--
+    <div id="itemlists" class="container"> 
+
+      <div class="text-center">
+        <h5 class="text-center">Earn points through purchases, redeem points on deals and view your transactions</h5>
+        <br>
+      </div>
+      <div class="row" >
+        <div class="col-md-4 ">
+          <div class="card" >
+            <img class="card-img-top" src="img/cup.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Cup</h4>
+              <p class="card-text">Buy this cup with 50 points</p>
+              
+              <button class="btn btn-primary cup50" type="submit">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" >
+            <img class="card-img-top" src="img/book.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book</h4>
+              <p class="card-text">Buy this book with 70 points</p>
+              
+              <button class="btn btn-primary book70" type="submit">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+-->
+
+
+    <div class="container" id="infoSection">
+
+      <div class="text-center">
+        <h5 class="text-center">Earn points through purchases, redeem points on deals and view your transactions</h5>
+        <br>
+      </div>
+
+
+      <div class="row">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          
+          <li class="nav-item tab-width">
+            <a class="nav-link" id="redeem-tab" data-toggle="tab" href="#redeem" role="tab" aria-controls="redeem" aria-selected="false">Redeem Points</a>
+          </li>
+          <li class="nav-item tab-width">
+            <a class="nav-link" id="transactions-tab" data-toggle="tab" href="#transactions" role="tab" aria-controls="transactions" aria-selected="false">Transactions</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="tab-content" id="myTabContent">
+          
+
+          <div class="tab-pane fade" id="redeem" role="tabpanel" aria-labelledby="redeem-tab">
+            <br>
+            <h5> Redeem Points on Deals </h5>
+            <br>
+               
+            <div class="row" >
+
+
+              <div class="col-md-4 ">
+                <div class="card" >
+                  <img class="card-img-top" src="img/cup.jpeg" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Cup</h4>
+                    <p class="card-text">Buy this cup with 50 points</p>
+                    
+                    <button class="btn btn-primary cup50" type="submit">Buy</button>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-4">
+                <div class="card" >
+                  <img class="card-img-top" src="img/book.jpeg" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Book</h4>
+                    <p class="card-text">Buy this book with 70 points</p>
+                    
+                    <button class="btn btn-primary book70" type="submit">Buy</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 ">
+                  <div class="card" >
+                    <img class="card-img-top" src="img/cup.jpeg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Cup</h4>
+                      <p class="card-text">Buy this cup with 50 points</p>
+                      
+                      <button class="btn btn-primary cup50" type="submit">Buy</button>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-md-4">
+                  <div class="card" >
+                    <img class="card-img-top" src="img/book.jpeg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Book</h4>
+                      <p class="card-text">Buy this book with 70 points</p>
+                      
+                      <button class="btn btn-primary book70" type="submit">Buy</button>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+
+  
+                <hr class="featurette-divider">
+
+          </div>
+
+          <div class="tab-pane fade" id="transactions" role="tabpanel" aria-labelledby="transactions-tab">
+            <br>
+            <p>View transactions by transaction type </p>
+            <br>
+            <ul class="nav nav-tabs" id="transactionsTypeTab" role="tablist">
+              <li class="nav-item ">
+                <a class="nav-link active" id="points-allocated-tab" data-toggle="tab" href="#points-allocated" role="tab" aria-controls="points-allocated" aria-selected="true">Points Allocated</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" id="points-redeemed-tab" data-toggle="tab" href="#points-redeemed" role="tab" aria-controls="points-redeemed" aria-selected="false">Points Redeemed</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="points-allocated" role="tabpanel" aria-labelledby="points-allocated-tab">
+                <br>
+                <h4>Points Earned Transactions</h4>
+                <br>
+                <div class="points-allocated-transactions"> </div>
+                <br><br>
+              </div>
+
+              <div class="tab-pane fade " id="points-redeemed" role="tabpanel" aria-labelledby="points-redeemed-tab">
+                <br>
+                <h4>Points Redeemed Transactions</h4>
+                <br>
+                <div class="points-redeemed-transactions"> </div>
+                <br><br>
+              </div>
+
+            </div>
+
+            <hr class="featurette-divider">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container text-center">
+    <br><br>
+    <div class="container text-center">
+      <div class="loader" id="loader" style="display:none;"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script src="/scripts/jquery-3.3.1.min.js"></script>
+
+<script src="/scripts/bootstrap.js"></script>
+<script src="/scripts/member.js"></script>
