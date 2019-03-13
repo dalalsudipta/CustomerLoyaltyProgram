@@ -67,3 +67,4 @@ async function UsePoints(usePoints) {
     throw new Error('Partner does not exist - check id');
   }
 }
+ 
