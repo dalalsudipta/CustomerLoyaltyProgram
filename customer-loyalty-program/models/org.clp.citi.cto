@@ -61,6 +61,10 @@ transaction EarnPoints {
 //points spent
 transaction UsePoints {
     o Integer points
+    o String usePointDescription
+    o String customerFirstName optional
+    o String customerLastName optional
+    o String customerZip optional
     --> Partner partner  
     --> Customer member
 }
